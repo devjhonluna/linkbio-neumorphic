@@ -1,0 +1,17 @@
+---
+import Avatar from "@components/Linktree/Avatar/Avatar.astro";
+import profilefoto from "@/assets/img/img_avatar.png"
+
+---
+<header>
+  <Avatar>
+     <img src={profilefoto.src} alt="foto del perfil" width={profilefoto.width} height={profilefoto.height} slot="avatar-img">
+     <figcaption slot="avatar-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sed, accusantium suscipit reiciendis nulla ad impedit!</figcaption>
+  </Avatar>
+</header>
+
+<style>
+   header{
+    border: 1px solid red;
+   }
+</style>

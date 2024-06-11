@@ -1,16 +1,25 @@
 ---
+import LinktreeBody from "@/components/Linktree/LinktreeBody.astro";
+import LinktreeFooter from "@/components/Linktree/LinktreeFooter.astro";
+import LinktreeHeader from "@/components/Linktree/LinktreeHeader.astro";
+import LinktreeWrapper from "@/components/Linktree/LinktreeWrapper.astro";
 
+import "@/styles/global.scss"
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Linktree Neumorfico</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<LinktreeWrapper>
+			<LinktreeHeader/>
+			<LinktreeBody/>
+			<LinktreeFooter/>
+		</LinktreeWrapper>
 	</body>
 </html>
