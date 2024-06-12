@@ -1,9 +1,8 @@
 ---
-import LinktreeBody from "@/components/Linktree/LinktreeBody.astro";
-import LinktreeFooter from "@/components/Linktree/LinktreeFooter.astro";
-import LinktreeHeader from "@/components/Linktree/LinktreeHeader.astro";
-import LinktreeWrapper from "@/components/Linktree/LinktreeWrapper.astro";
 
+import Container from "@/components/commons/Container/Container.astro"
+import Header from "@/components/header/Header.astro"
+import Main from "@/components/main/Main.astro"
 import "@/styles/global.scss"
 ---
 
@@ -16,10 +15,28 @@ import "@/styles/global.scss"
 		<title>Linktree Neumorfico</title>
 	</head>
 	<body>
-		<LinktreeWrapper>
-			<LinktreeHeader/>
-			<LinktreeBody/>
-			<LinktreeFooter/>
-		</LinktreeWrapper>
+	    <Container class="linktree">
+			<Header/>
+			<Main/>
+		</Container>
+		<footer class="footer">
+			Desarrollado por DEVJL Todos los derechos reservados
+		</footer>
 	</body>
 </html>
+
+<style lang="scss">
+	.linktree{
+		max-width: clamp(25ch,50%,50ch);
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		border: 1px solid;
+		padding: 1rem;
+	}
+	.footer{
+		text-align: center;
+		
+	}
+
+</style>

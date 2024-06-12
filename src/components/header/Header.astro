@@ -1,0 +1,52 @@
+---
+import Avatar from "@/components/commons/Avatar/Avatar.astro";
+import fotoavatar from "@/assets/img/img_avatar.png";
+---
+
+<header class="linktree__header">
+  <Avatar class="linktree__header__avatar">
+    <img
+      class="linktree__header__avatar__img"
+      src={fotoavatar.src}
+      alt="foto de perfil"
+      width={fotoavatar.width}
+      height={fotoavatar.height}
+      slot="avatar-img"
+    />
+    <figcaption
+      class="linktree__header__avatar__descripcion"
+      slot="avatar-descripcion"
+    >
+      <h1>John Doe</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam labore
+        aut aliquid.
+      </p>
+    </figcaption>
+  </Avatar>
+</header>
+
+<style lang="scss">
+  .linktree {
+    &__header {
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      &__avatar {
+        max-width: 192px;
+        width: 100%;
+        height: 100%;
+        &__img {
+          border-radius: 50%;
+          padding: 0.5rem;
+          border: 1px solid;
+        }
+        &__descripcion {
+          text-align: center;
+        }
+      }
+    }
+  }
+</style>

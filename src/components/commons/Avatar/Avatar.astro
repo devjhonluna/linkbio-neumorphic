@@ -1,12 +1,9 @@
 ---
-type Props = {
 
-}
-
-const {} = Astro.props
+const { class:classname, ...rest} = Astro.props
 
 ---
-<figure>
+<figure class={classname} {...rest}>
     <slot name="avatar-img"/>
     <slot name="avatar-descripcion"/>
 </figure>
