@@ -1,6 +1,6 @@
 ---
-import Avatar from "@/components/commons/Avatar/Avatar.astro";
-import fotoavatar from "@/assets/img/img_avatar.png";
+import Avatar from "@components/commons/Avatar/Avatar.astro";
+import fotoavatar from "@/assets/img/img_avatar.webp";
 ---
 
 <header class="linktree__header">
@@ -17,8 +17,8 @@ import fotoavatar from "@/assets/img/img_avatar.png";
       class="linktree__header__avatar__descripcion"
       slot="avatar-descripcion"
     >
-      <h1>John Doe</h1>
-      <p>
+      <h1 class="linktree__header__avatar__descripcion__title">John Doe</h1>
+      <p class="linktree__header__avatar__descripcion__content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam labore
         aut aliquid.
       </p>
@@ -26,27 +26,3 @@ import fotoavatar from "@/assets/img/img_avatar.png";
   </Avatar>
 </header>
 
-<style lang="scss">
-  .linktree {
-    &__header {
-      border: 1px solid red;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
-      &__avatar {
-        max-width: 192px;
-        width: 100%;
-        height: 100%;
-        &__img {
-          border-radius: 50%;
-          padding: 0.5rem;
-          border: 1px solid;
-        }
-        &__descripcion {
-          text-align: center;
-        }
-      }
-    }
-  }
-</style>

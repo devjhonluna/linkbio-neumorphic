@@ -1,3 +1,5 @@
+@use "/src/styles/index.scss";
+@use "../styles/linktree/abstracts/variables" as variable;
 * {
   margin: 0;
   padding: 0;
@@ -19,18 +21,23 @@ body {
   min-height: 100dvh;
   display: grid;
   place-items: center;
-  background: #f2f2f2;
+  background: variable.$bg;
   padding: 1rem;
+  color: variable.$textocolor;
+  gap: 1rem;
 }
+
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
+
 p {
   text-wrap: pretty;
 }
+
 h1,
 h2,
 h3,
@@ -39,6 +46,7 @@ h5,
 h6 {
   text-wrap: balance;
 }
+
 img,
 video,
 svg {

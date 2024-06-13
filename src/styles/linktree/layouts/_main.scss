@@ -1,0 +1,36 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.linktree__main {
+    @include mixins.flexlayout(column);
+    padding: 1rem;
+    width: 100%;
+    &__listbox{
+      list-style-type: none;
+      @include mixins.flexlayout(column);
+      gap: 1.25rem;
+      width: 100%;
+
+      &__item{
+          @include mixins.neoflat(10px,transparent,.5rem,variables.$sombrainferior,variables.$sombrasuperior);
+          padding: .75rem 1.25rem;
+          width: 100%;
+          text-align: center;
+          cursor: pointer;
+          transition: 1s all ease;
+          &:hover{
+            @include mixins.neoflat(10px, transparent,.5rem, variables.$sombrasuperior, variables.$sombrainferior);
+          }
+          &:active{
+            @include mixins.neoinset(10px, transparent, .25rem,variables.$sombrainferior,variables.$sombrasuperior)
+          }
+          &__link{
+              text-decoration: none;
+              color: black;
+              @include mixins.flexlayout();
+              gap: .5rem;
+          }
+      }
+
+    }
+}

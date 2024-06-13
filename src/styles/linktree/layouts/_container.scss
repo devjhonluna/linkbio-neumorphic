@@ -1,0 +1,13 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+.linktree{
+    max-width: clamp(30ch,60%,50ch);
+    width: 100%;
+    @include mixins.flexlayout(column);
+    padding: 1rem;   
+    @include mixins.neoflat(1rem, transparent, .5rem, variables.$sombrainferior, variables.$sombrasuperior);
+}
+.footer{
+    text-align: center; 
+    font-size: clamp(0.75rem, 0.625rem + 0.63vw, 1.125rem);   
+}

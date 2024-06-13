@@ -1,0 +1,19 @@
+@mixin flexlayout($dir: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justify;
+  align-items: $justify;
+}
+
+@mixin neoflat($radius: 18px, $bg: #fff, $eje: 0, $lws:#cecece, $ups:#fff) {
+  border-radius: $radius;
+  background: $bg;
+  box-shadow: $eje $eje ($eje * 2) $lws, (-$eje) (-$eje) ($eje * 2) $ups;
+}
+
+@mixin neoinset($radius: 18px, $bg: #fff, $eje: 0, $lws:#cecece, $ups:#fff) {
+  border-radius: $radius;
+  background: $bg;
+  box-shadow: inset $eje $eje ($eje * 2) $lws,
+    inset (-$eje) (-$eje) ($eje * 2) $ups;
+}
