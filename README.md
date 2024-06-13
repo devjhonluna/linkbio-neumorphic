@@ -1,5 +1,10 @@
 # Linktree Neumorfico
 
+![linkbio neumorfico moviles](https://github.com/devjhonluna/linkbio-neumorphic/assets/106981529/77aff58e-647d-41e1-b8f8-797843bd2f0e)
+![linkbio neumorfico pc](https://github.com/devjhonluna/linkbio-neumorphic/assets/106981529/d11f5745-d1d1-4902-b213-5e75a45cef38)
+![linkbio neumorfico table](https://github.com/devjhonluna/linkbio-neumorphic/assets/106981529/5e780242-3932-4df2-8f3c-2288b0cea56e)
+
+
 ## Descripción
 
 Esta es una plantilla gratuita de Linktree creada con Astro.js y SCSS. Se ha utilizado la metodología BEM para las clases y el estilo de diseño Neumorfismo. Esta plantilla es perfecta para aquellos que buscan una solución personalizable y fácil de usar para compartir múltiples enlaces a través de un solo enlace en su biografía de redes sociales.
