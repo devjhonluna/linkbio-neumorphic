@@ -24,9 +24,37 @@ Esta es una plantilla gratuita de Linktree creada con Astro.js y SCSS. Se ha uti
 - **Soporte para múltiples enlaces**: Al igual que Linktree, puedes compartir múltiples enlaces a través de un solo enlace en tu biografía de redes sociales.
 - **Sin limitaciones**: A diferencia de la versión gratuita de Linktree, esta plantilla no tiene limitaciones. Tienes acceso a todas las características sin tener que pagar.
 
-## Cómo usar
+## Uso de la plantilla 
 
-Para usar esta plantilla, simplemente descárgala, personalízala según tus necesidades y súbela a tu servidor o plataforma de hosting.
+Para usar nuestra plantilla, tienes dos opciones:
+
+1. **Clonar el repositorio**: Si tienes instalado Git, puedes clonar el código en tu PC ejecutando el siguiente comando:
+   ```
+   git clone https://github.com/johnggli/linktree.git
+   ```
+2. Descargar el ZIP: Descarga el archivo [ZIP](https://github.com/devjhonluna/linkbio-neumorphic/archive/refs/heads/master.zip) con todos los archivos.
+   
+Una vez que los archivos estén en tu máquina, abre el proyecto en Visual Studio Code.
+
+Con los archivos abiertos en Visual Studio Code, ejecuta el siguiente comando (debes tener Node instalado para que funcione el proyecto):
+
+ ```
+npm run dev
+
+ ```
+
+### personalizacion 
+
+* Cambia la foto de perfil y la descripción en el archivo ```header.astro``` que está ubicado en la carpeta de componentes y subcarpeta header.
+  
+* Cambia los colores y las sombras en el archivo ```_variables.scss```, ubicado en la carpeta de styles, dentro de la subcarpeta de linktree y la subcarpeta abstracts. PD: Es recomendable usar las herramientas online de [uicolors](https://uicolors.app/create) y [neumorphism.io](https://neumorphism.io/) o [neumorphic design](https://neumorphic.design/)  para tener un mejor resultado.
+
+* Para personalizar los enlaces de tus redes sociales, debes modificar el archivo socialmedialinks.js que se encuentra en la carpeta de utils. Dentro de este archivo, encontrarás un array llamado socialmedia.
+  
+* Puedes cambiar los enlaces existentes o agregar nuevos enlaces según tus necesidades. Cada enlace debe ser un objeto dentro del array socialmedia.
+
+Recuerda guardar tus cambios y probar tu sitio para asegurarte de que los enlaces funcionan correctamente.
+
 
 Esperamos que disfrutes usando esta plantilla y que te ayude a mejorar tu presencia en las redes sociales. Si tienes alguna pregunta o necesitas ayuda, no dudes en ponerte en contacto con nosotros. ¡Disfruta!
 
