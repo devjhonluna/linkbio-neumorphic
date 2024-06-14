@@ -43,7 +43,7 @@ npm run dev
 
  ```
 
-### personalizacion 
+### Personalizacion 
 
 * Cambia la foto de perfil y la descripción en el archivo ```header.astro``` que está ubicado en la carpeta de componentes y subcarpeta header.
   
